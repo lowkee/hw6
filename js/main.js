@@ -1,4 +1,4 @@
-var people []
+var people = [];
 
 $(document).ready(function(){
   $("#newPerson").click(function(){
@@ -9,7 +9,7 @@ $(document).ready(function(){
 function myFunction() {
    var x =
   document.getElementById("fname").form.id;
-  document.getElementById("lname").form.id
+  document.getElementById("lname").form.id;
   document.getElementById("age").innerHTML = x;
 }
 
@@ -30,4 +30,6 @@ function form() {
 var people = { people: fname, lname, age };
 localStorage.setItem("people", JSON.stringify(people));
 var retrievedData = localStorage.getItem("people");
+var continueData = JSON.parse(retrievedData);
+
 

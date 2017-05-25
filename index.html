@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Local Storage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+<div>
+     
+<button id="newPerson">Add New Person</button>
+<table style="width:5px">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+  <tr>
+  <td>
+  <button onclick="myFunction()">
+  Edit</button>
+  <button onclick="myFunction()">
+  Delete</button>
+  </td>
+  </tr>
+</table>
+</div>
+<div>
+   <form action="/action_page.php" method="get" id="addform">
+    First name: <input id="fname" type="text" name="fname"><br>
+    Last name: <input id="lname" type="text" name="lname"><br>
+    Age: <input id="age" type="number" name="age"><br>
+   </form>
+   <button onclick="myFunction()">Submit</button>
+   <button onclick="myFunction()">Cancel</button>
+
+</div>
+
+
+<script type="text/javascript" src="js/main.js">
+</script>
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+</body>
+</html>
